@@ -152,11 +152,13 @@ var title4 = "Gaming Accounts";
 
 var social_media_list = [[title1, [Github, Replit, DMOJ, Leetcode, Devpost]], [title2, [LinkedIn, Google1, Google2, Kijiji]], [title3, [Instagram, Snapchat, Facebook, Youtube, Spotify]], [title4, [Discord, Ps4, Epicgames, Steam, Riot, Chess, Supercell]]]
 
+document.write('<div class="parent-social-media-container">');
 for (let j = 0; j < social_media_list.length; j++) {
-    document.write('<div class="parent-social-media-container">');
     if (j == 0) {
-        document.write('<p class="info-title">Socials</p>');
+        document.write('<p class="info-title">Socials and Accounts</p>');
     }
+    document.write('<div class="alt-color">');
+    document.write('</div>');
     document.write('<p class="info-title smaller-font">' + social_media_list[j][0] + '</p>');
     for (let i = 0; i < social_media_list[j][1].length; i++) {
         document.write('<div class="social-media-container" onclick="location.href=`' + social_media_list[j][1][i].link + '`" style="cursor: pointer;">');
@@ -169,5 +171,5 @@ for (let j = 0; j < social_media_list.length; j++) {
         document.write("</div>");
         document.write("</div>");
     }
-    document.write('</div>');
 }
+document.write('</div>');

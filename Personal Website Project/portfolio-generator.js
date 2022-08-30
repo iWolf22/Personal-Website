@@ -47,7 +47,7 @@ text_sources = [
 for (let i = 0; i < portfolio_list.length; i++) {
     document.write('<div class="info-container">');
     if (i == 0) {
-        document.write('<p class="info-title">Portfolio</p>');
+        document.write('<p class="info-title">Programming Portfolio</p>');
     }
     document.write('<p class="info-title smaller-font">' + portfolio_list[i].name + '</p>');
     document.write('<div class="video-container">');
