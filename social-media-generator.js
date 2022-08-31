@@ -114,19 +114,19 @@ var Ps4 = {
     name: 'Playstation',
     username: 'Inferno_Wolf_22',
     link: 'https://www.playstation.com/',
-    picture: 'images/ps4-photo.png',
+    picture: 'images/Ps4-photo.png',
 }
 
 var Chess = {
     name: 'Chess',
     username: 'iWolff22',
     link: 'https://www.chess.com/member/iwolff22',
-    picture: 'images/chess-photo.png',
+    picture: 'images/Chess-photo.png',
 }
 
 var Supercell = {
     name: 'Super Cell',
-    username: 'Joshua',
+    username: 'josh',
     link: 'https://link.clashroyale.com/?clashroyale://supercell_id&p=1df02818-4aa6-4453-b4a8-88729152bacc',
     picture: 'images/Supercell-photo.png',
 }
@@ -145,12 +145,19 @@ var Devpost = {
     picture: 'images/Devpost-photo.png',
 }
 
+var Twitter = {
+    name: 'Twitter',
+    username: '@DierickseJoshua',
+    link: 'https://twitter.com/DierickseJoshua',
+    picture: 'images/Twitter-photo.png',
+}
+
 var title1 = "Programming Socials";
 var title2 = "Business Profiles";
-var title3 = "Social Media";
+var title3 = "Social Medias";
 var title4 = "Gaming Accounts";
 
-var social_media_list = [[title1, [Github, Replit, DMOJ, Leetcode, Devpost]], [title2, [LinkedIn, Google1, Google2, Kijiji]], [title3, [Instagram, Snapchat, Facebook, Youtube, Spotify]], [title4, [Discord, Ps4, Epicgames, Steam, Riot, Chess, Supercell]]]
+var social_media_list = [[title1, [Github, Replit, DMOJ, Leetcode, Devpost]], [title2, [LinkedIn, Google1, Google2, Kijiji]], [title3, [Instagram, Snapchat, Facebook, Twitter, Youtube, Spotify]], [title4, [Discord, Ps4, Epicgames, Steam, Riot, Chess, Supercell]]]
 
 document.write('<div class="parent-social-media-container">');
 for (let j = 0; j < social_media_list.length; j++) {
@@ -161,7 +168,7 @@ for (let j = 0; j < social_media_list.length; j++) {
     document.write('</div>');
     document.write('<p class="info-title smaller-font">' + social_media_list[j][0] + '</p>');
     for (let i = 0; i < social_media_list[j][1].length; i++) {
-        document.write('<div class="social-media-container" onclick="location.href=`' + social_media_list[j][1][i].link + '`" style="cursor: pointer;">');
+        document.write('<div class="social-media-container" onclick="window.open(`' + social_media_list[j][1][i].link + '`, `_blank`)" style="cursor: pointer;">');
         document.write('<div class="flex-parent jc-center">');
         document.write('<p class="social-media-text">' + social_media_list[j][1][i].name + '</p>');
         document.write("</div>");

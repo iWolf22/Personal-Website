@@ -31,17 +31,17 @@ var symphony_strips = {
 portfolio_list = [chess_game, flappy_bird_game, symphony_strips]
 
 video_images_sources = [
+    'images/Symphony-strips-photo.png',
     'images/Github-photo.png',
     'images/Replit-photo.png',
-    'images/Youtube-photo.png',
-    'images/Symphony-strips-photo.png'
+    'images/Youtube-photo.png'
 ]
 
 text_sources = [
+    'Website',
     'Github',
     'Replit',
-    'Youtube',
-    'Website'
+    'Youtube'
 ]
 
 for (let i = 0; i < portfolio_list.length; i++) {
@@ -55,11 +55,11 @@ for (let i = 0; i < portfolio_list.length; i++) {
     document.write('<p class="video-text">' + portfolio_list[i].description + '<p/>');
     document.write('</div>');
     document.write('<div class="video-images-format">');
-    links_list = [portfolio_list[i].github, portfolio_list[i].replit, portfolio_list[i].youtube_watch, portfolio_list[i].website];
+    links_list = [portfolio_list[i].website, portfolio_list[i].github, portfolio_list[i].replit, portfolio_list[i].youtube_watch];
     for (let j = 0; j < 4; j++) {
         if (links_list[j] != 'null') {
-            document.write('<div class="video-images-container" onclick="location.href=`' + links_list[j]  + '`">');
-            document.write('<img class="video-images" src="' + video_images_sources[j] + '" alt="Github Logo Link">');
+            document.write('<div class="video-images-container" onclick="window.open(`' + links_list[j]  + '`, `_blank`)">');
+            document.write('<img class="video-images" src="' + video_images_sources[j] + '" alt="' + text_sources[j] + ' Logo Link">');
             document.write('<p class="video-images-text">' + text_sources[j] + '</p>');
             document.write('</div>');
         }
