@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+    <header>
+        <div class="header-container" id="home-div">
+            <button class="header-text" onClick="document.getElementById('home-div').scrollIntoView();">Home</button>
+            <button class="header-text" onClick="document.getElementById('about-div').scrollIntoView();">About Me</button>
+            <button class="header-text" onClick="document.getElementById('portfolio-div').scrollIntoView();">Portfolio</button>
+            <button class="header-text" onClick="document.getElementById('socials-div').scrollIntoView();">Socials</button>
+            <button class="header-text" onClick="document.getElementById('resume-div').scrollIntoView();">Resume</button>
+        </div>
+        <button class="up-arrow" onClick="document.getElementById('home-div').scrollIntoView();">^</button>
+    <body>
+
+        <div class="info-container">
+            <p class="info-title">Hello, I am Joshua Dierickse</p>
+            <div class="sub-info-container">
+                <img class="info-photo" src="images/info-photo.jpg" alt="info photo">
+                <div>
+                    <p class="info-text">Welcome to my website wondering visitor! I am Joshua Dierickse a young computer enthusiast who is an avid programmer. This website is just a personal project to sharpen my web development skills so it will be rough around the corners :) please don't cringe too hard when exploring this site!</p>
+                    <p class="info-text"> * Note this website was made only for desktop computers with a 1080p monitor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-container" id="about-div">
+            <p class="info-title">About Me Slideshow</p>
+            <div class="sub-carousel-container">
+                <script type="text/javascript" src="carousel-slider.js"></script>
+                <p class="carousel-arrow" onclick="carousel_slider('left')">←</p>
+                <img class="carousel-photo" id="carousel-picture" src="carousel-images/carousel-photo-1.jpg" alt="carousel photo">
+                <p class="carousel-arrow" onclick="carousel_slider('right')">→</p>
+                <p class="carousel-counter" id="carousel-number">1/5</p>
+                <p class="carousel-text" id="carousel-writing">Shad Carleton Design Group Two's Prototype "Symphony Strips"</p>
+            </div>
+        </div>
+
+        <div id="portfolio-div">
+            <script src="portfolio-generator.js"></script>
+        </div>
+
+        <div id="socials-div">
+            <script src="social-media-generator.js"></script>
+        </div>
+
+        <div class="resume-container" id="resume-div">
+            <p class="info-title">Joshua Dierickse's Resume</p>
+                <embed class="resume-format" src="assets/Joshua Dierickse's Resume.pdf"/>
+        </div>
+    </body>
+</html>
