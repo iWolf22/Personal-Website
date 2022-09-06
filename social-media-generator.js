@@ -164,8 +164,7 @@ for (let j = 0; j < social_media_list.length; j++) {
     if (j == 0) {
         document.write('<p class="info-title">Socials and Accounts</p>');
     }
-    document.write('<div class="alt-color">');
-    document.write('</div>');
+    document.write('<hr class="alt-color">');
     document.write('<p class="info-title smaller-font">' + social_media_list[j][0] + '</p>');
     for (let i = 0; i < social_media_list[j][1].length; i++) {
         document.write('<div class="social-media-container" onclick="window.open(`' + social_media_list[j][1][i].link + '`, `_blank`)" style="cursor: pointer;">');

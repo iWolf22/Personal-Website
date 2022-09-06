@@ -44,22 +44,19 @@ html {
     font-family: 'JetBrains Mono', monospace;
 }
 
-.sub-info-container {
-    display: flex;
-}
-
 .info-photo {
     border-radius: 10px;
     width: 30%;
     height: 30%;
-    margin: 30px;
+    margin: 30px 30px 10px 30px;
+    float: left;
 }
 
 .info-text {
     font-family: 'JetBrains Mono', monospace;
     font-size: 20px;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin: 20px;
     margin-top: 20px;
     line-height: 2;
     color: #051F20;
@@ -263,8 +260,9 @@ html {
 
 .alt-color {
     background-color: #ADC2A9;
-    padding: 5px;
+    padding: 2px;
     margin: 20px;
+    border: none;
 }
 
 .top-margin {
