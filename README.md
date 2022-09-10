@@ -18,4 +18,4 @@ Currently, if you would like to visit the website, it is avaliable at: https://w
 
 ## License & Copyright
 
-© Joshua Dierickse & Son Le, Waterloo Collegiate Institute
+© Joshua Dierickse, Waterloo Collegiate Institute
