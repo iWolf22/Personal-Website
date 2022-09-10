@@ -7,25 +7,30 @@ var symphony_strips = {
 
 var moutain_biking = {
     image: "carousel-images/carousel-photo-2.jpg",
-    caption: `Mountain biking with friends at the "hydrocut"`
+    caption: `Mountain biking action shot`
+}
+
+var bowling = {
+    image: "carousel-images/carousel-photo-3.jpg",
+    caption: `Bowling with school friends`
+}
+
+var frisbee = {
+    image: "carousel-images/carousel-photo-4.jpg",
+    caption: `WCI's school ultimate frisbee team`
+}
+
+var hockey = {
+    image: "carousel-images/carousel-photo-5.jpg",
+    caption: `Waterloo wolves rep hockey team`
 }
 
 var pink_donut = {
-    image: "carousel-images/carousel-photo-3.jpg",
+    image: "carousel-images/carousel-photo-6.jpg",
     caption: `3D modeled pink donut made using blender`
 }
 
-var cooking_burgers = {
-    image: "carousel-images/carousel-photo-4.jpg",
-    caption: `Cooking hamburgers over the camp fire at Killbear Provincial Park`
-}
-
-var full_send = {
-    image: "carousel-images/carousel-photo-5.jpg",
-    caption: `Full sending it off a mountain biking jump with friends`
-}
-
-index_list = [symphony_strips, moutain_biking, pink_donut, cooking_burgers, full_send]
+index_list = [symphony_strips, moutain_biking, bowling, frisbee, hockey, pink_donut]
 
 function carousel_slider(direction) {
     if (direction == "left") {
@@ -44,5 +49,5 @@ function carousel_slider(direction) {
 
     document.getElementById("carousel-picture").src = index_list[image_index].image;
     document.getElementById("carousel-writing").innerHTML = index_list[image_index].caption;
-    document.getElementById("carousel-number").innerHTML = (image_index + 1) + "/5";
+    document.getElementById("carousel-number").innerHTML = (image_index + 1) + "/" + index_list.length;
 }
