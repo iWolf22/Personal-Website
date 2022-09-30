@@ -6,7 +6,7 @@ It is currently only configured for devices with a 1080p screen and a 16:9 aspec
 Currently, I do have plans on making an improved personal website with more advanced frameworks, like bootstrap and reactjs.
 With the end goal of making a professional and interactive website that will entertain and immerse users.
 
-Currently, if you would like to visit the website, it is avaliable at: https://www.joshuadierickse.ml/
+Currently, if you would like to visit the website, it is avaliable at: https://www.joshuadierickse.tech/
 
 ---
 
