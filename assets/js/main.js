@@ -300,3 +300,13 @@ function addAnimation() {
     });
   });
 }
+
+// Loading Spinner Code
+const spinnerWrapperEl = document.querySelector(".spinner-wrapper");
+window.addEventListener("load", () => {
+  spinnerWrapperEl.style.opacity = "0";
+  document.querySelector(".disable-scroll").classList.remove('disable-scroll');
+  setTimeout(() => {
+    spinnerWrapperEl.style.display = "none";
+  }, 300);
+});
